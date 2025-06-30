@@ -1,0 +1,24 @@
+@use 'sass:math';
+@use '../_variables' as *;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 2em);
+
+  @media #{$md-only} {
+    max-width: 600px;
+  }
+
+  @media #{$lg-only} {
+    max-width: 876px;
+  }
+
+  @media #{$xl-only} {
+    max-width: 1080px;
+  }
+
+  @media #{$xxl-only} {
+    max-width: 1260px;
+  }
+}

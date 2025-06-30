@@ -1,0 +1,77 @@
+$grid-columns: 12;
+$grid-gutter: 0.5rem;
+$md: 680px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+$xxl: 1400px !default;
+
+$sm-only: 'screen and (max-width: #{$md})';
+$md-only: 'screen and (min-width: #{$md}) and (max-width: #{$lg - 1px})';
+$lg-only: 'screen and (min-width: #{$lg}) and (max-width: #{$xl - 1px})';
+$xl-only: 'screen and (min-width: #{$xl}) and (max-width: #{$xxl - 1px})';
+$xxl-only: 'screen and (min-width: #{$xxl})';
+
+$md-and-up: 'screen and (min-width: #{$md})';
+$lg-and-up: 'screen and (min-width: #{$lg})';
+$xl-and-up: 'screen and (min-width: #{$xl})';
+
+$lg-and-down: 'screen and (max-width: #{$xl})';
+
+$breakpoints: (
+  'md': $md-only,
+  'lg': $lg-and-up,
+  'xl': $xl-and-up,
+  'xxl': $xxl-only
+);
+
+$primary-color: #76b900;
+$error-color: #dc3545;
+
+$border-color: #e0e0e0;
+$border-radius: 0.375rem;
+
+$font-family: 'Lato', sans-serif;
+$title-font-size: 1.25rem;
+
+$button-height: 2.5rem;
+$button-border: 1px solid $primary-color;
+$button-color-text: #fff;
+$button-label-size: 1rem;
+$button-icon-size: 1rem;
+
+$icon-size: 1.5rem;
+
+$input-background-color: #f5f8fa;
+$input-border: 1px solid #e0e0e0;
+$input-font-size: 1rem;
+
+$label-font-size: 0.875rem;
+$label-margin-bottom: 0.125rem;
+
+$menubar-background-color: #f5f5f5;
+$menubar-mobile-height: 4rem;
+$menubar-tablet-height: 5.25rem;
+$menubar-desktop-height: 6rem;
+$menubar-slim-height: 4rem;
+$menubar-logo-height: 2.5rem;
+$menubar-logo-height-tablet: 4rem;
+
+$paginator-background: #fff;
+$paginator-color: #000;
+$paginator-gap: 0.25rem;
+$paginator-padding: 0.5rem 0.5rem;
+$paginator-border: 1px solid #e0e0e0;
+
+$loader-background: rgba(255, 255, 255, 0.75);
+$loader-circle-background: rgba(255, 255, 255, 0.75);
+
+$drawer-overlay-background: rgba(0, 0, 0, 0.5);
+$drawer-background-color: #fff;
+$drawer-shadow:
+  0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+$modal-overlay-background: rgba(0, 0, 0, 0.5);
+$modal-shadow:
+  0 20px 25px -5px rgba(0, 0, 0, 0.1),
+  0 8px 10px -6px rgba(0, 0, 0, 0.1);

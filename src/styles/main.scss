@@ -1,0 +1,67 @@
+@use './_variables.scss' as *;
+@use './base/_all.scss' as *;
+
+@import 'toastify-js/src/toastify.css';
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css');
+
+:root {
+  --primary-color: #{$primary-color};
+  --primary-color-darker: hsl(from var(--primary-color) h s calc(l - 7));
+
+  --error-color: #{$error-color};
+
+  --border-color: #{$border-color};
+  --border-radius: #{$border-radius};
+
+  --font-family: #{$font-family};
+  --title-font-size: #{$title-font-size};
+
+  --button-height: #{$button-height};
+  --button-border: #{$button-border};
+  --button-color-text: #{$button-color-text};
+  --button-label-size: #{$button-label-size};
+  --button-icon-size: #{$button-icon-size};
+
+  --icon-size: #{$icon-size};
+
+  --input-background-color: #{$input-background-color};
+  --input-border: #{$input-border};
+  --input-font-size: #{$input-font-size};
+
+  --label-font-size: #{$label-font-size};
+  --label-margin-bottom: #{$label-margin-bottom};
+
+  --menubar-background-color: #{$menubar-background-color};
+  --menubar-mobile-height: #{$menubar-mobile-height};
+  --menubar-tablet-height: #{$menubar-tablet-height};
+  --menubar-desktop-height: #{$menubar-desktop-height};
+  --menubar-slim-height: #{$menubar-slim-height};
+  --menubar-logo-height: #{$menubar-logo-height};
+  --menubar-logo-height-tablet: #{$menubar-logo-height-tablet};
+
+  --paginator-background: #{$paginator-background};
+  --paginator-color: #{$paginator-color};
+  --paginator-border: #{$paginator-border};
+  --paginator-gap: #{$paginator-gap};
+  --paginator-padding: #{$paginator-padding};
+
+  --loader-background: #{$loader-background};
+  --loader-circle-background: #{$loader-circle-background};
+
+  --drawer-overlay-background: #{$drawer-overlay-background};
+  --drawer-background-color: #{$drawer-background-color};
+  --drawer-shadow: #{$drawer-shadow};
+
+  --modal-overlay-background: #{$modal-overlay-background};
+  --modal-shadow: #{$modal-shadow};
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

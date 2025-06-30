@@ -1,0 +1,42 @@
+@use 'sass:math';
+@use '../_variables.scss' as *;
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$grid-gutter;
+  margin-right: -$grid-gutter;
+  margin-top: -$grid-gutter;
+
+  .col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+    width: auto;
+  }
+
+  @for $col from 0 through $grid-columns {
+    .col-#{$col} {
+      padding: $grid-gutter;
+      width: math.percentage(math.div($col, $grid-columns));
+    }
+  }
+
+  @each $name, $media in $breakpoints {
+    @media #{$media} {
+      .#{$name}\:col {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 0.5rem;
+        width: auto;
+      }
+
+      @for $col from 0 through $grid-columns {
+        .#{$name}\:col-#{$col} {
+          padding: $grid-gutter;
+          width: math.percentage(math.div($col, $grid-columns));
+        }
+      }
+    }
+  }
+}
